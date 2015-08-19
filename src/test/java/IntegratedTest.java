@@ -39,24 +39,22 @@ public class IntegratedTest extends FluentTest {
     fill("#artist").with("ExampleArists");
     submit(".btn");
     click("a", withText("Go Back"));
-    assertThat(pageSource()).contains("To Pimp A Butterfly");
-    assertThat(pageSource()).contains("ExampleArtists");
+    assertThat(pageSource()).contains("To Pimp A Butterfly by ExampleArists");
     }
 
   @Test
   public void muiltipleAlbumsDisplayed(){
     goTo("http://localhost:4567/");
     fill("#title").with("To Pimp A Butterfly");
-    fill("#artist").with("ExampleArists");
+    fill("#artist").with("ExampleArtists");
     submit(".btn");
     click("a", withText("Go Back"));
     fill("#title").with("From Kinshasa");
     fill("#artist").with("ExampleArists");
     submit(".btn");
     click("a", withText("Go Back"));
-    assertThat(pageSource()).contains("To Pimp A Butterfly");
-    assertThat(pageSource()).contains("From Kinshasa");
-    assertThat(pageSource()).contains("ExampleArtists");
+    assertThat(pageSource()).contains("To Pimp A Butterfly by ExampleArtists");
+    assertThat(pageSource()).contains("From Kinshasa by ExampleArists");
   }
 
 }

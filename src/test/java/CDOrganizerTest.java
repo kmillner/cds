@@ -27,15 +27,15 @@ public class CDOrganizerTest{
     assertEquals("ExampleArtist", myCD.getArtistName());
   }
 
-  // @Test
-  // public void artists_instantiatesCorretly_true(){
-  //   Artists myArtist = new Artists("Backstreet Boys");
-  //   assertEquals(true, myArtist instanceof Artists);
-  // }
-  //
-  // @Test
-  // public void artists_instantiatesWithArtistName_true(){
-  //   Artists myArtist = new Artists("Backstreet Boys");
-  //   assertEquals("Backstreet Boys", myArtist.getArtistName());
-  // }
+  @Test
+  public void artists_instantiatesCorretly_true(){
+    CD myArtist = new CD ("ExampleAlbum", "ExampleArtist");
+    assertEquals(true, myArtist instanceof CD);
+  }
+
+  @Test
+  public void artists_instantiatesWithArtistName_true(){
+    CD myArtist = new CD ("ExampleAlbum", "ExampleArtist");
+    assertEquals("ExampleArtist", myArtist.getArtistName());
+  }
 }

@@ -1,0 +1,10 @@
+<h1>CD Organizer</h1>
+Current CD's
+
+<ul>
+#foreach ($newCD in $albums)
+  <li>$newCD.getAlbumTitle() by $newCD.getArtistName()</li>
+#end
+</ul>
+
+<a href="/AddNewCD">Add a new CD to list</a>

@@ -3,7 +3,7 @@ apply plugin: 'application'
 
 archivesBaseName = "cd-organizer"
 version = '1.0'
-mainClassName = "App"
+mainClassName = "App2"
 
 repositories {
  mavenCentral()
