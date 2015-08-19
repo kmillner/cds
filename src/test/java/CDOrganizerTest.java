@@ -10,14 +10,32 @@ import static org.junit.Assert.*;
 public class CDOrganizerTest{
 
   @Test
-  public void cDOrganizer_instantiatesCorrectly_true(){
-    CDOrganizer myCD = new CDOrganizer("To Pimp a Butterfly");
-    assertEquals(true, myCD instanceof CDOrganizer);
+  public void cD_instantiatesCorrectly_true(){
+    CD myCD = new CD("To Pimp a Butterfly", "exampleArtist");
+    assertEquals(true, myCD instanceof CD);
   }
 
   @Test
-  public void cDOrganizer_instantsWithalbumtitle_true(){
-    CDOrganizer myCD = new CDOrganizer("To Pimp a Butterfly");
+  public void cD_instantsWithalbumtitle_true(){
+    CD myCD = new CD("To Pimp a Butterfly", "exampleArtist");
     assertEquals("To Pimp a Butterfly", myCD.getAlbumTitle());
   }
+
+  @Test
+  public void cD_instantiatesWithArtistName_true(){
+    CD myCD = new CD("ExampleAlbum", "ExampleArtist");
+    assertEquals("ExampleArtist", myCD.getArtistName());
+  }
+
+  // @Test
+  // public void artists_instantiatesCorretly_true(){
+  //   Artists myArtist = new Artists("Backstreet Boys");
+  //   assertEquals(true, myArtist instanceof Artists);
+  // }
+  //
+  // @Test
+  // public void artists_instantiatesWithArtistName_true(){
+  //   Artists myArtist = new Artists("Backstreet Boys");
+  //   assertEquals("Backstreet Boys", myArtist.getArtistName());
+  // }
 }

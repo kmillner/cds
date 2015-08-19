@@ -1,11 +1,16 @@
-public class CDOrganizer{
-  private String mAlbumName;
+import java.util.ArrayList;
 
-  public CDOrganizer(String albumName){
-    mAlbumName = albumName;
+public class CDOrganizer{
+  private ArrayList<CD> mCds;
+
+  public CDOrganizer(){
+    mCds = new ArrayList<CD>();
+
   }
 
-  public String getAlbumTitle() {
-    return mAlbumName;
+
+  public void addCD(CD newCD) {
+  //  CD newCD = CD(albumName, artistName);
+    mCds.add(newCD);
   }
 }

@@ -22,17 +22,25 @@ public class App {
 
     post("/albums", (request, response) -> {
     HashMap<String, Object> model = new HashMap<String, Object>();
-    ArrayList<CDOrganizer> albums = request.session().attribute("albums");
+    ArrayList<CD> albums = request.session().attribute("albums");
 
       if (albums == null){
-        albums = new ArrayList<CDOrganizer>();
+        albums = new ArrayList<CD>();
         request.session().attribute("albums", albums);
       }
 
-    String description = request.queryParams("description");
-    CDOrganizer newCD = new CDOrganizer(description);
+    String title = request.queryParams("title");
+    String artist = request.queryParams("artist");
+    CD newCD = new CD(title, artist);
     //request.session().attribute("album", newCD);
     albums.add(newCD);
+
+    post("/artists", ()
+
+
+
+
+
 
     model.put("template", "templates/succces.vtl");
     return new ModelAndView(model, layout);

@@ -26,7 +26,8 @@ public class IntegratedTest extends FluentTest {
   @Test
   public void albumnameisCreatedTest() {
     goTo("http://localhost:4567/");
-    fill("#description").with("To Pimp A Butterfly");
+    fill("#title").with("To Pimp A Butterfly");
+    fill("#artist").with("ExampleArists");
     submit(".btn");
     assertThat(pageSource()).contains("Your album has been saved.");
   }
@@ -34,22 +35,28 @@ public class IntegratedTest extends FluentTest {
   @Test
   public void albumIsDisplayedTest() {
     goTo("http://localhost:4567/");
-    fill("#description").with("To Pimp A Butterfly");
+    fill("#title").with("To Pimp A Butterfly");
+    fill("#artist").with("ExampleArists");
     submit(".btn");
     click("a", withText("Go Back"));
     assertThat(pageSource()).contains("To Pimp A Butterfly");
+    assertThat(pageSource()).contains("ExampleArtists");
     }
 
   @Test
   public void muiltipleAlbumsDisplayed(){
     goTo("http://localhost:4567/");
-    fill("#description").with("To Pimp A Butterfly");
+    fill("#title").with("To Pimp A Butterfly");
+    fill("#artist").with("ExampleArists");
     submit(".btn");
     click("a", withText("Go Back"));
-    fill("#description").with("From Kinshasa");
+    fill("#title").with("From Kinshasa");
+    fill("#artist").with("ExampleArists");
     submit(".btn");
     click("a", withText("Go Back"));
     assertThat(pageSource()).contains("To Pimp A Butterfly");
     assertThat(pageSource()).contains("From Kinshasa");
+    assertThat(pageSource()).contains("ExampleArtists");
   }
+
 }
