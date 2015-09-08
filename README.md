@@ -1,40 +1,34 @@
-# _{CD Organizer}_
+# _CD Organizer_
 
-##### _ {Aug 2015}_
+##### _ {August 2015}_
 
-#### By _**{Andrea Paggett & Kallen Millner}**_
+#### By _**{Kallen Millner & Andrea Paggett}**_
 
 ## Description
 
-_{This is a detailed description of your application. Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. Do you want other developers to use this code in their apps? Talk about things like that here in simple terms.}_
+_{This application can be used to organize cds by artist. }_
 
 ## Setup
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
+Clone this repository.
+For a mac, run the following command in your terminal: gradle run.
+Open local host:4567 in browser
 
-_{Leave nothing to chance! You want it to be easy for potential employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Are there other applications this app depends on?}_
 
 ## Technologies Used
 
-_{Tell me about the languages you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out.}_
+Technologies used Java HTML5 Spark ver. 2.1 jUnit ver 4.+ Bootstrap ver 3.2.0 Fluentlenium ver 0.10.3 Velocity ver 1.7
 
 ### Legal
 
-*{This is boilerplate legal language. Read through it, and if you like it, use it. There are other license agreements online, but you can generally copy and paste this.}*
-
-Copyright (c) 2015 **_{List of contribtors}_**
+Copyright (c) 2015 **_{Kallen Millner and Andrea Paggett}_**
 
 This software is licensed under the MIT license.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sellcopies of the Software, and to permit persons to whom the Software is
 furnished to do so, subject to the following conditions:
 
 The above copyright notice and this permission notice shall be included in
