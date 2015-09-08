@@ -1,8 +1,8 @@
-# _{Application Name}_
+# _{CD Organizer}_
 
-##### _{Brief description of application}, {Date of current version}_
+##### _ {Aug 2015}_
 
-#### By _**{List of contributors}**_
+#### By _**{Andrea Paggett & Kallen Millner}**_
 
 ## Description
 
